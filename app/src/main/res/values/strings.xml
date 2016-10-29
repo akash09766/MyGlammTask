@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyGlammTask</string>
+    <string name="app_name_title">MyGlamm</string>
+    <string name="networking_error_msg">oops ! something went wrong. please try again later </string>
+    <string name="indian_rs_symb0l">\u20B9</string>
+    <string name="retry">RETRY</string>
+    <string name="retry_msg">something went wrong. please try again</string>
+    <string name="ntw_setting">GO TO SETTINGS</string>
+    <string name="ntw_unvailable_msg">Please make sure that you are connected to intenet</string>
+
+    <string name="Artist_activity_title">Choose myglamm artist</string>
+
+    <string name="book_now_but_text">BOOK NOW</string>
+</resources>

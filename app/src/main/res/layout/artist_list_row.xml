@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="@dimen/dimen_size_4_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/artist_list_item_width"
+        android:layout_marginBottom="@dimen/artist_list_divider_size">
+
+        <ImageView
+            android:id="@+id/user_profile_iv_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/myglamm_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/list_item_bg">
+
+            <RatingBar
+                android:id="@+id/artist_rating_id"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/artist_rating_bar_margin"
+                android:clickable="false"
+                android:numStars="5"
+                android:rating="3.7"
+                android:progressTint="@color/colorPrimary"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/price_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/artist_price_tv_margin"
+                android:background="@color/trnas_white"
+                android:paddingBottom="@dimen/dimen_size_5_dp"
+                android:paddingLeft="@dimen/dimen_size_10_dp"
+                android:paddingRight="@dimen/dimen_size_10_dp"
+                android:paddingTop="@dimen/dimen_size_5_dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Rs.120.0"
+                android:textSize="@dimen/artist_price_tv_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dimen_size_10_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:text="Angela Stancyy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/tv_main_title_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_size_7_dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_main_subtitle_icon_size"
+                        android:layout_height="@dimen/iv_main_subtitle_icon_size"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_size_3_dp"
+                        android:src="@drawable/ic_content_cut_white" />
+
+                    <TextView
+                        android:id="@+id/services_offered_tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical"
+                        android:text="3 out of 4 serices"
+                        android:textColor="@color/subtitle_text_color"
+                        android:textSize="@dimen/tv_main_subtitle_size" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_size_7_dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_main_subtitle_icon_size"
+                        android:layout_height="@dimen/iv_main_subtitle_icon_size"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_size_3_dp"
+                        android:src="@drawable/ic_date_range_white" />
+
+                    <TextView
+                        android:id="@+id/experience_tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:fontFamily="sans-serif"
+                        android:text="3yrs experience"
+                        android:textColor="@color/subtitle_text_color"
+                        android:textSize="@dimen/tv_main_subtitle_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/book_now_but_text"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:theme="@style/AppTheme_Button" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

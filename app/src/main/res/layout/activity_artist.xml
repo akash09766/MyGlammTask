@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_artist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_view_background_color"
+    tools:context="com.myglamm.myglammtask.activity.ArtistActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mArtist_listview_id"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_size_2_dp"
+        android:layout_marginBottom="@dimen/dimen_size_2_dp"
+        android:layout_marginRight="@dimen/dimen_size_4_dp"
+        android:layout_marginLeft="@dimen/dimen_size_4_dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/error_msg_tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/try_again_but_id"
+        android:layout_margin="@dimen/dimen_size_10_dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/retry_msg"
+        android:textColor="@color/extra_black_gray_02" />
+
+    <Button
+        android:id="@+id/try_again_but_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="@string/retry" />
+
+    <Button
+        android:id="@+id/setting_but_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_size_10_dp"
+        android:layout_below="@+id/try_again_but_id"
+        android:text="@string/ntw_setting"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+</RelativeLayout>
